@@ -55,7 +55,6 @@ final class NetworkViewModel: ObservableObject, AsyncRestServiceProtocol {
         request.httpMethod = urlAPI.method
         //        request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue(UIDevice.current.identifierForVendor?.uuidString, forHTTPHeaderField: "device-uuid")
         
         if isTokenRequired {
             if let accessToken = UserDefaults.standard.string(forKey: "accessToken") {
