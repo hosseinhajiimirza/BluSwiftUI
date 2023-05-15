@@ -28,6 +28,11 @@
 		4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58502A129421008682CA /* HomeViewModel.swift */; };
 		4FEC58542A12987C008682CA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58532A12987C008682CA /* Home.swift */; };
 		4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58582A129F39008682CA /* HomeTransferRow.swift */; };
+		4FEC585D2A12AF1F008682CA /* HashableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC585C2A12AF1F008682CA /* HashableExtension.swift */; };
+		4FEC585F2A12B115008682CA /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC585E2A12B115008682CA /* BundleExtension.swift */; };
+		4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58612A12B19D008682CA /* ViewDidLoad.swift */; };
+		4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58632A12B1C8008682CA /* ReadSize.swift */; };
+		4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58672A12B23E008682CA /* PullToRefresh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,11 @@
 		4FEC58502A129421008682CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4FEC58532A12987C008682CA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4FEC58582A129F39008682CA /* HomeTransferRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferRow.swift; sourceTree = "<group>"; };
+		4FEC585C2A12AF1F008682CA /* HashableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableExtension.swift; sourceTree = "<group>"; };
+		4FEC585E2A12B115008682CA /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		4FEC58612A12B19D008682CA /* ViewDidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoad.swift; sourceTree = "<group>"; };
+		4FEC58632A12B1C8008682CA /* ReadSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSize.swift; sourceTree = "<group>"; };
+		4FEC58672A12B23E008682CA /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +112,7 @@
 		4FEC581F2A127F42008682CA /* General */ = {
 			isa = PBXGroup;
 			children = (
-				4FEC583C2A1289FE008682CA /* TabGroup */,
+				4FEC585A2A12AEF7008682CA /* Helpers */,
 				4FEC58352A1282A9008682CA /* Starter */,
 				4FEC58202A127F49008682CA /* Base */,
 			);
@@ -184,8 +194,9 @@
 		4FEC583A2A1283B9008682CA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				4FEC583B2A1283D0008682CA /* Recourses */,
 				4FEC581F2A127F42008682CA /* General */,
+				4FEC583C2A1289FE008682CA /* TabGroup */,
+				4FEC583B2A1283D0008682CA /* Recourses */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -294,6 +305,50 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4FEC585A2A12AEF7008682CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58652A12B229008682CA /* Components */,
+				4FEC58602A12B192008682CA /* Modifiers */,
+				4FEC585B2A12AEFD008682CA /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4FEC585B2A12AEFD008682CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC585C2A12AF1F008682CA /* HashableExtension.swift */,
+				4FEC585E2A12B115008682CA /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FEC58602A12B192008682CA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58612A12B19D008682CA /* ViewDidLoad.swift */,
+				4FEC58632A12B1C8008682CA /* ReadSize.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4FEC58652A12B229008682CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58662A12B232008682CA /* PullToRefresh */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4FEC58662A12B232008682CA /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58672A12B23E008682CA /* PullToRefresh.swift */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,19 +422,24 @@
 				4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */,
 				4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
+				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
 				4FEC58542A12987C008682CA /* Home.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
+				4FEC585D2A12AF1F008682CA /* HashableExtension.swift in Sources */,
 				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
+				4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */,
+				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,
 				4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */,
+				4FEC585F2A12B115008682CA /* BundleExtension.swift in Sources */,
 				4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */,
 				4FEC58392A128325008682CA /* AppDelegate.swift in Sources */,
 				4FEC58372A1282BA008682CA /* Root.swift in Sources */,
