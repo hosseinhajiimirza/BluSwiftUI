@@ -17,6 +17,7 @@
 		4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58292A12802B008682CA /* EmptyModel.swift */; };
 		4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC582D2A1280B9008682CA /* AsyncRestServiceProtocol.swift */; };
 		4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58302A1280E2008682CA /* NetworkViewModel.swift */; };
+		4FEC58342A12813B008682CA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58332A12813B008682CA /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4FEC58292A12802B008682CA /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
 		4FEC582D2A1280B9008682CA /* AsyncRestServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRestServiceProtocol.swift; sourceTree = "<group>"; };
 		4FEC58302A1280E2008682CA /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		4FEC58332A12813B008682CA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		4FEC58212A127F96008682CA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58322A128134008682CA /* View */,
 				4FEC582B2A12808F008682CA /* ViewModel */,
 				4FEC58222A127F9D008682CA /* Model */,
 			);
@@ -139,6 +142,14 @@
 				4FEC58302A1280E2008682CA /* NetworkViewModel.swift */,
 			);
 			path = Real;
+			sourceTree = "<group>";
+		};
+		4FEC58322A128134008682CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58332A12813B008682CA /* Network.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
+				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,
 				4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */,
 				4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */,
