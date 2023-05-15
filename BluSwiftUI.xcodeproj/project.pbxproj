@@ -15,6 +15,8 @@
 		4FEC58262A128008008682CA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58252A128008008682CA /* Config.swift */; };
 		4FEC58282A12801B008682CA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58272A12801B008682CA /* Errors.swift */; };
 		4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58292A12802B008682CA /* EmptyModel.swift */; };
+		4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC582D2A1280B9008682CA /* AsyncRestServiceProtocol.swift */; };
+		4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58302A1280E2008682CA /* NetworkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4FEC58252A128008008682CA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4FEC58272A12801B008682CA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4FEC58292A12802B008682CA /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		4FEC582D2A1280B9008682CA /* AsyncRestServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRestServiceProtocol.swift; sourceTree = "<group>"; };
+		4FEC58302A1280E2008682CA /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		4FEC58212A127F96008682CA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC582B2A12808F008682CA /* ViewModel */,
 				4FEC58222A127F9D008682CA /* Model */,
 			);
 			path = Network;
@@ -109,6 +114,31 @@
 				4FEC58292A12802B008682CA /* EmptyModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4FEC582B2A12808F008682CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC582F2A1280D9008682CA /* Real */,
+				4FEC582C2A1280AA008682CA /* Protocol */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FEC582C2A1280AA008682CA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC582D2A1280B9008682CA /* AsyncRestServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4FEC582F2A1280D9008682CA /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58302A1280E2008682CA /* NetworkViewModel.swift */,
+			);
+			path = Real;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,11 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FEC58142A127C70008682CA /* ContentView.swift in Sources */,
+				4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,
 				4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */,
+				4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
