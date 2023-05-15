@@ -57,6 +57,8 @@ struct PullToRefresh: View {
 
 struct PullToRefresh_Previews: PreviewProvider {
     static var previews: some View {
-        PullToRefresh()
+        PullToRefresh() {
+            //
+        }
     }
 }

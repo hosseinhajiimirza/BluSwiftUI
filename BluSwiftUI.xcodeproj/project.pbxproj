@@ -33,6 +33,7 @@
 		4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58612A12B19D008682CA /* ViewDidLoad.swift */; };
 		4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58632A12B1C8008682CA /* ReadSize.swift */; };
 		4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58672A12B23E008682CA /* PullToRefresh.swift */; };
+		4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		4FEC58612A12B19D008682CA /* ViewDidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoad.swift; sourceTree = "<group>"; };
 		4FEC58632A12B1C8008682CA /* ReadSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSize.swift; sourceTree = "<group>"; };
 		4FEC58672A12B23E008682CA /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSpaceName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		4FEC581F2A127F42008682CA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58692A12B400008682CA /* Models */,
 				4FEC585A2A12AEF7008682CA /* Helpers */,
 				4FEC58352A1282A9008682CA /* Starter */,
 				4FEC58202A127F49008682CA /* Base */,
@@ -349,6 +352,14 @@
 			path = PullToRefresh;
 			sourceTree = "<group>";
 		};
+		4FEC58692A12B400008682CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +444,7 @@
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
 				4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */,
+				4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */,
 				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
