@@ -20,13 +20,17 @@ struct Home: View {
                 PullToRefresh {
                     homeViewModel.refreshTransferList()
                 }
-                LazyVStack {
-                    ForEach(homeViewModel.transfers) { homeModel in
-                        NavigationLink(destination: Color.blue) {
-                            HomeTransferRow(homeModel: homeModel)
-                        }
-                        .onAppear {
-                            homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                VStack(alignment: .leading) {
+                    HeadingTitle(title: "All")
+                        .padding(.leading)
+                    LazyVStack {
+                        ForEach(homeViewModel.transfers) { homeModel in
+                            NavigationLink(destination: Color.blue) {
+                                HomeTransferRow(homeModel: homeModel)
+                            }
+                            .onAppear {
+                                homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                            }
                         }
                     }
                 }
