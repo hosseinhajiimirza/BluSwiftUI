@@ -23,6 +23,8 @@
 		4FEC58432A128AC2008682CA /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58422A128AC2008682CA /* CardModel.swift */; };
 		4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58442A128B9C008682CA /* MoreInfoModel.swift */; };
 		4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58462A128C3B008682CA /* PersonModel.swift */; };
+		4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC584C2A1292D8008682CA /* HomeAPI.swift */; };
+		4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		4FEC58422A128AC2008682CA /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		4FEC58442A128B9C008682CA /* MoreInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoModel.swift; sourceTree = "<group>"; };
 		4FEC58462A128C3B008682CA /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		4FEC584C2A1292D8008682CA /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 		4FEC583E2A128A0B008682CA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58492A12927B008682CA /* ViewModel */,
 				4FEC583F2A128A10008682CA /* Model */,
 			);
 			path = Home;
@@ -229,6 +234,31 @@
 				4FEC58462A128C3B008682CA /* PersonModel.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		4FEC58492A12927B008682CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC584A2A129280008682CA /* APIConfig */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FEC584A2A129280008682CA /* APIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC584B2A1292CD008682CA /* Real */,
+				4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */,
+			);
+			path = APIConfig;
+			sourceTree = "<group>";
+		};
+		4FEC584B2A1292CD008682CA /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC584C2A1292D8008682CA /* HomeAPI.swift */,
+			);
+			path = Real;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +336,10 @@
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
+				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
+				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,

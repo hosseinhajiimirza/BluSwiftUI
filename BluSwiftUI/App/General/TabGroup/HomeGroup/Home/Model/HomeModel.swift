@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct HomeResponseModel: Codable, Identifiable {
+typealias HomeResponseModel = [HomeModel]
+
+struct HomeModel: Codable, Identifiable {
     init(from decoder: Decoder) throws {
         let keyedCodingContainer = try decoder.container(keyedBy: CodingKeys.self)
         

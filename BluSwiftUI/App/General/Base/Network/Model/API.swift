@@ -8,7 +8,7 @@
 import Foundation
 
 enum API: String {
-    case transferList = "transfer-list"
+    case getTransferList = "transfer-list"
 
     var method: String {
         switch self {
@@ -18,7 +18,7 @@ enum API: String {
 //            return Method.post.rawValue
             // GET:
         case
-                .transferList:
+                .getTransferList:
             return Method.get.rawValue
 //            // PATCH:
 //        case
