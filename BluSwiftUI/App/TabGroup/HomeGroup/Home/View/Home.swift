@@ -17,6 +17,11 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                PullToRefresh {
+                    Task {
+                        try? await homeViewModel.getTransferList(page: 1)
+                    }
+                }
                 // we can use lazyVStack here.
                 ForEach(homeViewModel.transfers) { homeModel in
                     NavigationLink(destination: Color.blue) {
@@ -24,6 +29,7 @@ struct Home: View {
                     }
                 }
             }
+            .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
             .onAppear {
                 Task {
                     try? await homeViewModel.getTransferList(page: 1)
