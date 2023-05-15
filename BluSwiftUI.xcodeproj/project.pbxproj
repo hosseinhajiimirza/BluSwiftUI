@@ -27,6 +27,7 @@
 		4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */; };
 		4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58502A129421008682CA /* HomeViewModel.swift */; };
 		4FEC58542A12987C008682CA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58532A12987C008682CA /* Home.swift */; };
+		4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58582A129F39008682CA /* HomeTransferRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIProtocol.swift; sourceTree = "<group>"; };
 		4FEC58502A129421008682CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4FEC58532A12987C008682CA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4FEC58582A129F39008682CA /* HomeTransferRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,9 +272,26 @@
 		4FEC58522A129870008682CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58562A129F1C008682CA /* Components */,
 				4FEC58532A12987C008682CA /* Home.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4FEC58562A129F1C008682CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58572A129F23008682CA /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4FEC58572A129F23008682CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58582A129F39008682CA /* HomeTransferRow.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +375,7 @@
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
+				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,

@@ -15,7 +15,23 @@ struct Home: View {
     }
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            ScrollView {
+                // we can use lazyVStack here.
+                ForEach(homeViewModel.transfers) { homeModel in
+                    NavigationLink(destination: Color.blue) {
+                        HomeTransferRow(homeModel: homeModel)
+                    }
+                }
+            }
+            .onAppear {
+                Task {
+                    try? await homeViewModel.getTransferList(page: 1)
+                }
+            }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

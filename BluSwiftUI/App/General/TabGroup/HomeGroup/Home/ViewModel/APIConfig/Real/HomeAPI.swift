@@ -16,7 +16,7 @@ struct HomeAPI: HomeAPIProtocol {
     
     func getTransferList(page: Int) async throws -> HomeResponseModel? {
         do {
-            return try await networkViewModel.sendRequest(urlAPI: API.getTransferList, decodeModel: HomeResponseModel.self, parameters: String(page))
+            return try await networkViewModel.sendRequest(urlAPI: API.getTransferList, decodeModel: HomeResponseModel.self, parameters: EmptyModel(), inputToURL: String(page))
         } catch let error as RequestError {
             throw error
         }

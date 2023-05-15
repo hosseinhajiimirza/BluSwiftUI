@@ -38,8 +38,7 @@ enum API: String {
     
     func getPath(_ input: String = "") -> String {
         return (
-            self.rawValue +
-            input
+            "/\(self.rawValue)/\(input)"
         )
         .replacingOccurrences(of: " ", with: "")
     }

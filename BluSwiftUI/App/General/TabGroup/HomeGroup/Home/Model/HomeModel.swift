@@ -10,6 +10,15 @@ import Foundation
 typealias HomeResponseModel = [HomeModel]
 
 struct HomeModel: Codable, Identifiable {
+    
+    init() {
+        self.person = .init()
+        self.card = .init()
+        self.lastTransfer = ""
+        self.note = ""
+        self.moreInfo = .init()
+    }
+    
     init(from decoder: Decoder) throws {
         let keyedCodingContainer = try decoder.container(keyedBy: CodingKeys.self)
         
