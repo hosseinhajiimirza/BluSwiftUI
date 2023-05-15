@@ -26,6 +26,7 @@
 		4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC584C2A1292D8008682CA /* HomeAPI.swift */; };
 		4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */; };
 		4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58502A129421008682CA /* HomeViewModel.swift */; };
+		4FEC58542A12987C008682CA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58532A12987C008682CA /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		4FEC584C2A1292D8008682CA /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
 		4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIProtocol.swift; sourceTree = "<group>"; };
 		4FEC58502A129421008682CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4FEC58532A12987C008682CA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		4FEC583E2A128A0B008682CA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58522A129870008682CA /* View */,
 				4FEC58492A12927B008682CA /* ViewModel */,
 				4FEC583F2A128A10008682CA /* Model */,
 			);
@@ -262,6 +265,14 @@
 				4FEC584C2A1292D8008682CA /* HomeAPI.swift */,
 			);
 			path = Real;
+			sourceTree = "<group>";
+		};
+		4FEC58522A129870008682CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58532A12987C008682CA /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
+				4FEC58542A12987C008682CA /* Home.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
 				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,

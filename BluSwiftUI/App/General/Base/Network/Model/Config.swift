@@ -15,5 +15,5 @@ enum Method: String{
 }
 
 enum AppConfig: String {
-    case baseURL = "https://jsonplaceholder.typicode.com/"
+    case baseURL = "https://1e67411f-7908-4eee-a750-cd90ed9343bc.mock.pstmn.io/"
 }
