@@ -67,8 +67,7 @@
 		4FEC58102A127C70008682CA /* BluSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4FEC581F2A127F42008682CA /* General */,
-				4FEC58152A127C73008682CA /* Assets.xcassets */,
+				4FEC583A2A1283B9008682CA /* App */,
 				4FEC58172A127C73008682CA /* Preview Content */,
 			);
 			path = BluSwiftUI;
@@ -161,6 +160,23 @@
 				4FEC58382A128325008682CA /* AppDelegate.swift */,
 			);
 			path = Starter;
+			sourceTree = "<group>";
+		};
+		4FEC583A2A1283B9008682CA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC583B2A1283D0008682CA /* Recourses */,
+				4FEC581F2A127F42008682CA /* General */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4FEC583B2A1283D0008682CA /* Recourses */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC58152A127C73008682CA /* Assets.xcassets */,
+			);
+			path = Recourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
