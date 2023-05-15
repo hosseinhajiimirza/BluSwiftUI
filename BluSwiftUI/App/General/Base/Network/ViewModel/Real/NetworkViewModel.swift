@@ -73,12 +73,11 @@ final class NetworkViewModel: ObservableObject, AsyncRestServiceProtocol {
         print("sent to url: \(url)")
         
         if let httpResponse = response as? HTTPURLResponse {
-            print(String(data: data, encoding: .utf8) as Any)
-            
             switch httpResponse.statusCode {
             case 200...299:
                 do {
                     let apiResponse = try JSONDecoder().decode(decodeModel, from: data)
+                    dump(apiResponse)
                     
                     return apiResponse
                 } catch {

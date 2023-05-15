@@ -18,21 +18,23 @@ struct Home: View {
         NavigationView {
             ScrollView {
                 PullToRefresh {
-                    Task {
-                        try? await homeViewModel.getTransferList(page: 1)
-                    }
+                    homeViewModel.refreshTransferList()
                 }
-                // we can use lazyVStack here.
-                ForEach(homeViewModel.transfers) { homeModel in
-                    NavigationLink(destination: Color.blue) {
-                        HomeTransferRow(homeModel: homeModel)
+                LazyVStack {
+                    ForEach(homeViewModel.transfers) { homeModel in
+                        NavigationLink(destination: Color.blue) {
+                            HomeTransferRow(homeModel: homeModel)
+                        }
+                        .onAppear {
+                            homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                        }
                     }
                 }
             }
             .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
-            .onAppear {
+            .onViewDidLoad {
                 Task {
-                    try? await homeViewModel.getTransferList(page: 1)
+                    try? await homeViewModel.getTransferList()
                 }
             }
             .navigationTitle("Home")
