@@ -8,12 +8,8 @@
 import SwiftUI
 
 struct HomeTransferRow: View {
-    var favoriteButtonSFSymbol: String {
-        isFavorite ? "star.fill" : "star"
-    }
-    
     let homeModel: HomeModel
-    let isFavorite: Bool
+    let favoriteButtonSFSymbol: String
     var action: (() -> Void)?
     
     var body: some View {
@@ -49,6 +45,6 @@ struct HomeTransferRow: View {
 
 struct HomeTransferRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTransferRow(homeModel: .init(), isFavorite: true)
+        HomeTransferRow(homeModel: .init(), favoriteButtonSFSymbol: "star")
     }
 }

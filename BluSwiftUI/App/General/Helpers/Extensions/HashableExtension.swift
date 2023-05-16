@@ -30,6 +30,34 @@ extension String {
     public var toInt: Int {
         return Int(self) ?? 0
     }
+    
+    var toCardNumberFormat: String {
+        var pureNumber = self.replacingOccurrences( of: "[^0-9]", with: "", options: .regularExpression)
+        let format = "####\n####\n####\n####"
+        for index in 0 ..< format.count {
+            guard index < pureNumber.count else { return pureNumber }
+            let stringIndex = String.Index(utf16Offset: index, in: format)
+            let patternCharacter = format[stringIndex]
+            guard patternCharacter != "#" else { continue }
+            pureNumber.insert(patternCharacter, at: stringIndex)
+        }
+        
+        return pureNumber
+    }
+    
+    var toCardNameFormat: String {
+        return self.replacingOccurrences(of: " ", with: "\n")
+    }
+    
+    var toISODate: Date {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withFullDate,
+                                   .withTime,
+                                   .withDashSeparatorInDate,
+                                   .withColonSeparatorInTime]
+        
+        return formatter.date(from: self) ?? Date()
+    }
 }
 // MARK: - Int
 extension Int {
