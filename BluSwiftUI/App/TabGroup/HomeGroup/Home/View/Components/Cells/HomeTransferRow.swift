@@ -12,8 +12,8 @@ struct HomeTransferRow: View {
     
     var body: some View {
         HStack {
-            Circle()
-                .fill(Color.blue)
+            CashedImage(url: homeModel.person.avatar)
+                .clipShape(Circle())
             VStack(alignment: .leading) {
                 Text(homeModel.person.fullName.capitalized)
                     .font(.body)
