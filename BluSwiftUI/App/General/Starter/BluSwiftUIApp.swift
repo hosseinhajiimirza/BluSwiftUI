@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct BluSwiftUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var coreDataViewModel: CoreDataViewModel = .init()
     
     var body: some Scene {
         WindowGroup {
             Root()
+                .environment(\.managedObjectContext, coreDataViewModel.container.viewContext)
         }
     }
 }
