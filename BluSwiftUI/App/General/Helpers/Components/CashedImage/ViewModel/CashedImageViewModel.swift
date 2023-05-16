@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class CashedImageManager: ObservableObject {
+final class CashedImageViewModel: ObservableObject {
     @Published private(set) var currentState: CurentState?
     private let imageRetriver: ImageRetriver = .init()
     
@@ -33,7 +33,7 @@ final class CashedImageManager: ObservableObject {
     }
 }
 
-extension CashedImageManager {
+extension CashedImageViewModel {
     enum CurentState {
         case loading
         case failed(error: Error)

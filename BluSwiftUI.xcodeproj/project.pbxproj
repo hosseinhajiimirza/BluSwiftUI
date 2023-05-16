@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */; };
 		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
-		4FA936A42A136E640047CFE3 /* CashedImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageManager.swift */; };
+		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
 		4FA936A72A136EB20047CFE3 /* CashedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A62A136EB20047CFE3 /* CashedImage.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetriver.swift; sourceTree = "<group>"; };
 		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
-		4FA936A32A136E640047CFE3 /* CashedImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageManager.swift; sourceTree = "<group>"; };
+		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
 		4FA936A62A136EB20047CFE3 /* CashedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImage.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -91,20 +91,18 @@
 		4FA9369D2A1365090047CFE3 /* Cashed */ = {
 			isa = PBXGroup;
 			children = (
-				4FA9369E2A13653A0047CFE3 /* Image */,
+				4FA936AA2A1385800047CFE3 /* Images */,
 			);
 			path = Cashed;
 			sourceTree = "<group>";
 		};
-		4FA9369E2A13653A0047CFE3 /* Image */ = {
+		4FA9369E2A13653A0047CFE3 /* CashedImage */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936A92A1385690047CFE3 /* ViewModel */,
 				4FA936A52A136EA90047CFE3 /* View */,
-				4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */,
-				4FA936A12A1366C30047CFE3 /* ImageCashe.swift */,
-				4FA936A32A136E640047CFE3 /* CashedImageManager.swift */,
 			);
-			path = Image;
+			path = CashedImage;
 			sourceTree = "<group>";
 		};
 		4FA936A52A136EA90047CFE3 /* View */ = {
@@ -113,6 +111,23 @@
 				4FA936A62A136EB20047CFE3 /* CashedImage.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4FA936A92A1385690047CFE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FA936AA2A1385800047CFE3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */,
+				4FA936A12A1366C30047CFE3 /* ImageCashe.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		4FEC58052A127C70008682CA = {
@@ -377,6 +392,7 @@
 		4FEC58652A12B229008682CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FA9369E2A13653A0047CFE3 /* CashedImage */,
 				4FEC586C2A12E38A008682CA /* HeadingTitle */,
 				4FEC58662A12B232008682CA /* PullToRefresh */,
 			);
@@ -479,7 +495,7 @@
 			files = (
 				4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */,
 				4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */,
-				4FA936A42A136E640047CFE3 /* CashedImageManager.swift in Sources */,
+				4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */,
 				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,

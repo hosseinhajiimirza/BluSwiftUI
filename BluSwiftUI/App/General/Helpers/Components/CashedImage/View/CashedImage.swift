@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CashedImage<Content: View>: View {
-    @StateObject private var cashedImageManager: CashedImageManager = .init()
+    @StateObject private var cashedImageViewModel: CashedImageViewModel = .init()
     let url: String
     @ViewBuilder let content: (CashedImagePhase) -> Content
     
@@ -18,14 +18,14 @@ struct CashedImage<Content: View>: View {
         }
         .onAppear {
             Task {
-                await cashedImageManager.load(url)
+                await cashedImageViewModel.load(url)
             }
         }
     }
     
     @ViewBuilder
     func getCurrentView() -> some View {
-        switch cashedImageManager.currentState {
+        switch cashedImageViewModel.currentState {
         case .loading:
             content(.empty)
         case .failed(error: let error):
