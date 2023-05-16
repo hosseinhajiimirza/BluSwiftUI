@@ -10,7 +10,10 @@ import SwiftUI
 struct Details: View {
     @ObservedObject var homeViewModel: HomeViewModel
     let homeModel: HomeModel
+    let favorites: FetchedResults<TransferCDModel>
     
+    @Environment(\.managedObjectContext) var moc
+
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)) {
             ScrollView(.vertical, showsIndicators: false) {
@@ -30,9 +33,9 @@ struct Details: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    //
+                    homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)
                 } label: {
-                    Image(systemName: "star")
+                    Image(systemName: homeViewModel.getFavoriteButtonSFSymbol(favorites: favorites, homeModel: homeModel))
                         .imageScale(.large)
                         .foregroundColor(.yellow)
                 }
@@ -44,7 +47,10 @@ struct Details: View {
 }
 
 struct Details_Previews: PreviewProvider {
+    static let persistance = CoreDataViewModel().container
+    
     static var previews: some View {
-        Details(homeViewModel: .init(), homeModel: .init())
+        Home()
+            .environment(\.managedObjectContext, persistance.viewContext)
     }
 }

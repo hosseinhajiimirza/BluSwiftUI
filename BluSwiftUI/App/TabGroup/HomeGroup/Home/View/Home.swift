@@ -31,10 +31,16 @@ struct Home: View {
                             .padding(.leading)
                         LazyVStack {
                             ForEach(homeViewModel.transfers) { homeModel in
-                                NavigationLink(destination: Details(homeViewModel: homeViewModel, homeModel: homeModel)) {
+                                NavigationLink(
+                                    destination: Details(
+                                        homeViewModel: homeViewModel,
+                                        homeModel: homeModel,
+                                        favorites: favorites
+                                    )
+                                ) {
                                     HomeTransferRow(
                                         homeModel: homeModel,
-                                        isFavorite: homeViewModel.checkIsInFavorites(favorites, homeModel: homeModel)
+                                        favoriteButtonSFSymbol: homeViewModel.getFavoriteButtonSFSymbol(favorites: favorites, homeModel: homeModel)
                                     ) {
                                         withAnimation(.spring()) {
                                             homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)

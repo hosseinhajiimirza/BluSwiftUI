@@ -70,4 +70,8 @@ final class HomeViewModel: ObservableObject {
     func favoriteButtonTapped(favorites: FetchedResults<TransferCDModel>, context: NSManagedObjectContext, homeModel: HomeModel) {
         homeCoreDataProtocol.favoriteButtonTapped(favorites: favorites, context: context, homeModel: homeModel)
     }
+    
+    func getFavoriteButtonSFSymbol(favorites: FetchedResults<TransferCDModel>, homeModel: HomeModel) -> String {
+        checkIsInFavorites(favorites, homeModel: homeModel) ? "star.fill" : "star"
+    }
 }
