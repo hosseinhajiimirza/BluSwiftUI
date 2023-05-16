@@ -18,6 +18,8 @@
 		4FA936BD2A13AB630047CFE3 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936BC2A13AB630047CFE3 /* CoreDataViewModel.swift */; };
 		4FA936C12A13AED00047CFE3 /* FavoritesHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */; };
 		4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */; };
+		4FA936C62A13DC620047CFE3 /* HomeCoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C52A13DC620047CFE3 /* HomeCoreDataProtocol.swift */; };
+		4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C72A13DCC40047CFE3 /* HomeCoreData.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		4FA936BC2A13AB630047CFE3 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHead.swift; sourceTree = "<group>"; };
 		4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferFavoriteRow.swift; sourceTree = "<group>"; };
+		4FA936C52A13DC620047CFE3 /* HomeCoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoreDataProtocol.swift; sourceTree = "<group>"; };
+		4FA936C72A13DCC40047CFE3 /* HomeCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoreData.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +197,15 @@
 				4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */,
 			);
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		4FA936C42A13DC310047CFE3 /* CDConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936C52A13DC620047CFE3 /* HomeCoreDataProtocol.swift */,
+				4FA936C72A13DCC40047CFE3 /* HomeCoreData.swift */,
+			);
+			path = CDConfig;
 			sourceTree = "<group>";
 		};
 		4FEC58052A127C70008682CA = {
@@ -378,6 +391,7 @@
 		4FEC58492A12927B008682CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936C42A13DC310047CFE3 /* CDConfig */,
 				4FEC584A2A129280008682CA /* APIConfig */,
 				4FEC58502A129421008682CA /* HomeViewModel.swift */,
 			);
@@ -567,6 +581,7 @@
 				4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */,
 				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
+				4FA936C62A13DC620047CFE3 /* HomeCoreDataProtocol.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
 				4FA936AC2A1386A30047CFE3 /* HomeTransferRowAvatar.swift in Sources */,
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
@@ -589,6 +604,7 @@
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
 				4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */,
+				4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,
 				4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */,

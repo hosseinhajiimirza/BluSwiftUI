@@ -14,8 +14,8 @@ struct Home: View {
     
     @Environment(\.managedObjectContext) var moc
     
-    init(homeAPIProtocol: HomeAPIProtocol = HomeAPI()) {
-        self._homeViewModel = StateObject(wrappedValue: HomeViewModel(homeAPIProtocol: homeAPIProtocol))
+    init(homeAPIProtocol: HomeAPIProtocol = HomeAPI(), homeCoreDataProtocol: HomeCoreDataProtocol = HomeCoreData()) {
+        self._homeViewModel = StateObject(wrappedValue: HomeViewModel(homeAPIProtocol: homeAPIProtocol, homeCoreDataProtocol: homeCoreDataProtocol))
     }
     
     var body: some View {
