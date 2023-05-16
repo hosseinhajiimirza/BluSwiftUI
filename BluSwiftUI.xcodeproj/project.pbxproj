@@ -23,6 +23,8 @@
 		4FA936CC2A13E69E0047CFE3 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936CB2A13E69E0047CFE3 /* Details.swift */; };
 		4FA936CF2A13F1920047CFE3 /* BluCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936CE2A13F1920047CFE3 /* BluCard.swift */; };
 		4FA936D22A14093D0047CFE3 /* SimpleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D12A14093D0047CFE3 /* SimpleRow.swift */; };
+		4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */; };
+		4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		4FA936CB2A13E69E0047CFE3 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		4FA936CE2A13F1920047CFE3 /* BluCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluCard.swift; sourceTree = "<group>"; };
 		4FA936D12A14093D0047CFE3 /* SimpleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRow.swift; sourceTree = "<group>"; };
+		4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInfo.swift; sourceTree = "<group>"; };
+		4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageAvatar.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				4FA936CE2A13F1920047CFE3 /* BluCard.swift */,
+				4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */,
+				4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -636,6 +642,8 @@
 				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
 				4FA936C12A13AED00047CFE3 /* FavoritesHead.swift in Sources */,
+				4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */,
+				4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */,
 				4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */,
 				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
