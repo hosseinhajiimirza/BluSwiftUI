@@ -44,7 +44,7 @@ struct PullToRefresh: View {
                 HStack {
                     Spacer()
                     if needRefresh {
-                        ProgressView()
+                        CustomActivityIndicator()
                     }
                     Spacer()
                 }
