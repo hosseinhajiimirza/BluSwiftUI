@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct BluCard: View {
-
-    /*
-     name, email, avatar
-     card: number, type
-     transfer: date, numberOf, total
-     */
+    let homeModel: HomeModel
     @State private var contentSize = CGSize.zero
     
     var body: some View {
@@ -39,18 +34,18 @@ struct BluCard: View {
                 }
                 VStack(alignment: .leading) {
                     Spacer(minLength: 0)
-                    Text("Jemimah Sprott".toCardNameFormat)
+                    Text(homeModel.person.fullName.toCardNameFormat)
                         .font(.title3)
                         .lineLimit(3)
                     Spacer(minLength: 0)
-                    Text("6219145011234114".toCardNumberFormat)
+                    Text(homeModel.card.cardNumber.toCardNumberFormat)
                         .font(.title3)
                         .fontWeight(.medium)
                     Spacer(minLength: 0)
                     VStack(alignment: .leading) {
                         Text("Type")
                             .font(.caption)
-                        Text("Mastercard")
+                        Text(homeModel.card.cardType)
                             .font(.caption)
                     }
                 }
@@ -64,6 +59,6 @@ struct BluCard: View {
 
 struct BluCard_Previews: PreviewProvider {
     static var previews: some View {
-        BluCard()
+        BluCard(homeModel: .init())
     }
 }

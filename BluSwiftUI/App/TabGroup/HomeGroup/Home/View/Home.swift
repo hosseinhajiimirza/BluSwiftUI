@@ -31,7 +31,7 @@ struct Home: View {
                             .padding(.leading)
                         LazyVStack {
                             ForEach(homeViewModel.transfers) { homeModel in
-                                NavigationLink(destination: Color.blue) {
+                                NavigationLink(destination: Details(homeViewModel: homeViewModel, homeModel: homeModel)) {
                                     HomeTransferRow(
                                         homeModel: homeModel,
                                         isFavorite: homeViewModel.checkIsInFavorites(favorites, homeModel: homeModel)
