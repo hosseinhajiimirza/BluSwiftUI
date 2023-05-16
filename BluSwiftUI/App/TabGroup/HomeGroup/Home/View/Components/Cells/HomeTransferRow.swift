@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct HomeTransferRow: View {
+    var favoriteButtonSFSymbol: String {
+        isFavorite ? "star.fill" : "star"
+    }
+    
     let homeModel: HomeModel
+    let isFavorite: Bool
+    var action: (() -> Void)?
     
     var body: some View {
         HStack(alignment: .center) {
@@ -23,8 +29,17 @@ struct HomeTransferRow: View {
                     .foregroundColor(.gray)
             }
             Spacer(minLength: 12)
-            Image(systemName: "chevron.right")
-                .foregroundColor(.gray)
+            HStack(alignment: .center) {
+                Button {
+                    action?()
+                } label: {
+                    Image(systemName: favoriteButtonSFSymbol)
+                        .imageScale(.large)
+                        .foregroundColor(.yellow)
+                }
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.gray)
+            }
         }
         .padding(.vertical, 12)
         .padding(.horizontal)
@@ -34,7 +49,6 @@ struct HomeTransferRow: View {
 
 struct HomeTransferRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTransferRow(homeModel: .init())
-        Home()
+        HomeTransferRow(homeModel: .init(), isFavorite: true)
     }
 }
