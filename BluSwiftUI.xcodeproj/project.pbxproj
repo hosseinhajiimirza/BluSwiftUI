@@ -29,6 +29,7 @@
 		4FA936DA2A14341A0047CFE3 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */; };
 		4FA936DC2A1434960047CFE3 /* HomeTransferLoadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DB2A1434960047CFE3 /* HomeTransferLoadingRow.swift */; };
 		4FA936DE2A14351E0047CFE3 /* HomeTransferLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DD2A14351E0047CFE3 /* HomeTransferLoading.swift */; };
+		4FA936E02A1438A10047CFE3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DF2A1438A10047CFE3 /* Images.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		4FA936DB2A1434960047CFE3 /* HomeTransferLoadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferLoadingRow.swift; sourceTree = "<group>"; };
 		4FA936DD2A14351E0047CFE3 /* HomeTransferLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferLoading.swift; sourceTree = "<group>"; };
+		4FA936DF2A1438A10047CFE3 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */,
+				4FA936DF2A1438A10047CFE3 /* Images.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				4FA936DE2A14351E0047CFE3 /* HomeTransferLoading.swift in Sources */,
 				4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
+				4FA936E02A1438A10047CFE3 /* Images.swift in Sources */,
 				4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */,
 				4FA936DC2A1434960047CFE3 /* HomeTransferLoadingRow.swift in Sources */,
 				4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */,
