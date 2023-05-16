@@ -13,7 +13,7 @@ struct FavoritesHead: View {
     var body: some View {
         ZStack {
             if !favorites.isEmpty {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 16) {
                     HeadingTitle(title: "Favorites")
                         .padding(.horizontal)
                     ScrollView(.horizontal, showsIndicators: false) {

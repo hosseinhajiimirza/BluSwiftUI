@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @StateObject private var homeViewModel: HomeViewModel
+    @Environment(\.managedObjectContext) var moc
     
     init(homeAPIProtocol: HomeAPIProtocol = HomeAPI()) {
         self._homeViewModel = StateObject(wrappedValue: HomeViewModel(homeAPIProtocol: homeAPIProtocol))
@@ -17,19 +18,22 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                PullToRefresh {
-                    homeViewModel.refreshTransferList()
-                }
-                VStack(alignment: .leading) {
-                    HeadingTitle(title: "All")
-                        .padding(.leading)
-                    LazyVStack {
-                        ForEach(homeViewModel.transfers) { homeModel in
-                            NavigationLink(destination: Color.blue) {
-                                HomeTransferRow(homeModel: homeModel)
-                            }
-                            .onAppear {
-                                homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                VStack(spacing: 20) {
+                    PullToRefresh {
+                        homeViewModel.refreshTransferList()
+                    }
+                    FavoritesHead()
+                    VStack(alignment: .leading, spacing: 8) {
+                        HeadingTitle(title: "All")
+                            .padding(.leading)
+                        LazyVStack {
+                            ForEach(homeViewModel.transfers) { homeModel in
+                                NavigationLink(destination: Color.blue) {
+                                    HomeTransferRow(homeModel: homeModel)
+                                }
+                                .onAppear {
+                                    homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                                }
                             }
                         }
                     }
@@ -48,7 +52,10 @@ struct Home: View {
 }
 
 struct Home_Previews: PreviewProvider {
+    static let persistance = CoreDataViewModel().container
+    
     static var previews: some View {
         Home()
+            .environment(\.managedObjectContext, persistance.viewContext)
     }
 }
