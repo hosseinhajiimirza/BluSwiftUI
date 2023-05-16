@@ -48,6 +48,16 @@ extension String {
     var toCardNameFormat: String {
         return self.replacingOccurrences(of: " ", with: "\n")
     }
+    
+    var toISODate: Date {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withFullDate,
+                                   .withTime,
+                                   .withDashSeparatorInDate,
+                                   .withColonSeparatorInTime]
+        
+        return formatter.date(from: self) ?? Date()
+    }
 }
 // MARK: - Int
 extension Int {

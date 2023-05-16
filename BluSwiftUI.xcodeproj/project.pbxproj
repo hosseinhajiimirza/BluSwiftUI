@@ -25,6 +25,7 @@
 		4FA936D22A14093D0047CFE3 /* SimpleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D12A14093D0047CFE3 /* SimpleRow.swift */; };
 		4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */; };
 		4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */; };
+		4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D72A1416890047CFE3 /* DateExtension.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		4FA936D12A14093D0047CFE3 /* SimpleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRow.swift; sourceTree = "<group>"; };
 		4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInfo.swift; sourceTree = "<group>"; };
 		4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageAvatar.swift; sourceTree = "<group>"; };
+		4FA936D72A1416890047CFE3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 			children = (
 				4FEC585C2A12AF1F008682CA /* HashableExtension.swift */,
 				4FEC585E2A12B115008682CA /* BundleExtension.swift */,
+				4FA936D72A1416890047CFE3 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
 				4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
+				4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
 				4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */,
 				4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */,

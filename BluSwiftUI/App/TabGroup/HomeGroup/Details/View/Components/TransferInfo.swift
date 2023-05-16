@@ -12,7 +12,7 @@ struct TransferInfo: View {
     
     var body: some View {
         VStack {
-            SimpleRow(leadingText: "Last transfer", trailingText: homeModel.lastTransfer)
+            SimpleRow(leadingText: "Last transfer", trailingText: homeModel.lastTransfer.toISODate.toCustomFormatSTR)
             Divider()
             SimpleRow(leadingText: "Number of transfers", trailingText: homeModel.moreInfo.numberOfTransfers.toString)
             Divider()
