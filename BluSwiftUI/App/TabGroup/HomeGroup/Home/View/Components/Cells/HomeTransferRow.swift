@@ -12,8 +12,24 @@ struct HomeTransferRow: View {
     
     var body: some View {
         HStack {
-            CashedImage(url: homeModel.person.avatar)
-                .clipShape(Circle())
+            CashedImage(url: homeModel.person.avatar) { phase in
+                switch phase {
+                case .empty:
+                    ZStack {
+                        Circle()
+                            .fill(Color.gray)
+                        ProgressView()
+                    }
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                case .failure(_):
+                    Circle()
+                        .fill(Color.red)
+                }
+            }
+            .clipShape(Circle())
             VStack(alignment: .leading) {
                 Text(homeModel.person.fullName.capitalized)
                     .font(.body)

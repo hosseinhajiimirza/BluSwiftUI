@@ -8,26 +8,35 @@
 import Foundation
 
 final class CashedImageManager: ObservableObject {
-    @Published private(set) var data: Data?
+    @Published private(set) var currentState: CurentState?
     private let imageRetriver: ImageRetriver = .init()
     
     @MainActor
     func load(_ imageURL: String, cashe: ImageCashe = .shared) async {
+        self.currentState = .loading
+        
         if let imageData = cashe.object(forKey: imageURL as NSString) {
-            self.data = imageData
+            self.currentState = .success(data: imageData)
             print("🗂️ Fetching image from the cashe with Key:\(imageURL)")
             
             return
         }
         
         do {
-            self.data = try await imageRetriver.fetch(imageURL)
-            if let dataToCashe = data as? NSData {
-                cashe.set(object: dataToCashe, forKey: imageURL as NSString)
-                print("🗂️ Cashing image from the url:\(imageURL)")
-            }
+            let data = try await imageRetriver.fetch(imageURL)
+            self.currentState = .success(data: data)
+            cashe.set(object: data as NSData, forKey: imageURL as NSString)
+            print("🗂️ Cashing image from the url:\(imageURL)")
         } catch {
-            print(error)
+            self.currentState = .failed(error: error)
         }
+    }
+}
+
+extension CashedImageManager {
+    enum CurentState {
+        case loading
+        case failed(error: Error)
+        case success(data: Data)
     }
 }
