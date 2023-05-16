@@ -16,6 +16,8 @@
 		4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936B62A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift */; };
 		4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936B72A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift */; };
 		4FA936BD2A13AB630047CFE3 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936BC2A13AB630047CFE3 /* CoreDataViewModel.swift */; };
+		4FA936C12A13AED00047CFE3 /* FavoritesHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */; };
+		4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		4FA936B62A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferCDModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		4FA936B72A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferCDModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		4FA936BC2A13AB630047CFE3 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHead.swift; sourceTree = "<group>"; };
+		4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferFavoriteRow.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +177,22 @@
 				4FA936BC2A13AB630047CFE3 /* CoreDataViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FA936BE2A13AEAC0047CFE3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		4FA936BF2A13AEB60047CFE3 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936C02A13AED00047CFE3 /* FavoritesHead.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 		4FEC58052A127C70008682CA = {
@@ -393,8 +413,9 @@
 		4FEC58562A129F1C008682CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936BF2A13AEB60047CFE3 /* Sections */,
+				4FA936BE2A13AEAC0047CFE3 /* Details */,
 				4FEC58572A129F23008682CA /* Cells */,
-				4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -403,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC58582A129F39008682CA /* HomeTransferRow.swift */,
+				4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -555,6 +577,8 @@
 				4FEC585D2A12AF1F008682CA /* HashableExtension.swift in Sources */,
 				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
+				4FA936C12A13AED00047CFE3 /* FavoritesHead.swift in Sources */,
+				4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */,
 				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
