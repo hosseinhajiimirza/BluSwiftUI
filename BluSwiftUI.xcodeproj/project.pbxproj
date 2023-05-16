@@ -26,6 +26,11 @@
 		4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */; };
 		4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */; };
 		4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D72A1416890047CFE3 /* DateExtension.swift */; };
+		4FA936DA2A14341A0047CFE3 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */; };
+		4FA936DC2A1434960047CFE3 /* HomeTransferLoadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DB2A1434960047CFE3 /* HomeTransferLoadingRow.swift */; };
+		4FA936DE2A14351E0047CFE3 /* HomeTransferLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DD2A14351E0047CFE3 /* HomeTransferLoading.swift */; };
+		4FA936E02A1438A10047CFE3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936DF2A1438A10047CFE3 /* Images.swift */; };
+		4FA936E32A1439180047CFE3 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936E22A1439180047CFE3 /* CustomActivityIndicator.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -76,6 +81,11 @@
 		4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInfo.swift; sourceTree = "<group>"; };
 		4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageAvatar.swift; sourceTree = "<group>"; };
 		4FA936D72A1416890047CFE3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		4FA936DB2A1434960047CFE3 /* HomeTransferLoadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferLoadingRow.swift; sourceTree = "<group>"; };
+		4FA936DD2A14351E0047CFE3 /* HomeTransferLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferLoading.swift; sourceTree = "<group>"; };
+		4FA936DF2A1438A10047CFE3 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4FA936E22A1439180047CFE3 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */,
+				4FA936DD2A14351E0047CFE3 /* HomeTransferLoading.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -253,6 +264,14 @@
 				4FA936D12A14093D0047CFE3 /* SimpleRow.swift */,
 			);
 			path = Rows;
+			sourceTree = "<group>";
+		};
+		4FA936E12A1438FB0047CFE3 /* CustomActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936E22A1439180047CFE3 /* CustomActivityIndicator.swift */,
+			);
+			path = CustomActivityIndicator;
 			sourceTree = "<group>";
 		};
 		4FEC58052A127C70008682CA = {
@@ -487,6 +506,7 @@
 			children = (
 				4FEC58582A129F39008682CA /* HomeTransferRow.swift */,
 				4FA936C22A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift */,
+				4FA936DB2A1434960047CFE3 /* HomeTransferLoadingRow.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -517,6 +537,7 @@
 			children = (
 				4FEC58612A12B19D008682CA /* ViewDidLoad.swift */,
 				4FEC58632A12B1C8008682CA /* ReadSize.swift */,
+				4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -524,6 +545,7 @@
 		4FEC58652A12B229008682CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936E12A1438FB0047CFE3 /* CustomActivityIndicator */,
 				4FA936D02A1409320047CFE3 /* Rows */,
 				4FA9369E2A13653A0047CFE3 /* CashedImage */,
 				4FEC586C2A12E38A008682CA /* HeadingTitle */,
@@ -544,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */,
+				4FA936DF2A1438A10047CFE3 /* Images.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -632,6 +655,7 @@
 				4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */,
 				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
+				4FA936DA2A14341A0047CFE3 /* ShimmerEffect.swift in Sources */,
 				4FA936C62A13DC620047CFE3 /* HomeCoreDataProtocol.swift in Sources */,
 				4FA936CC2A13E69E0047CFE3 /* Details.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
@@ -648,6 +672,7 @@
 				4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */,
 				4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */,
 				4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */,
+				4FA936E32A1439180047CFE3 /* CustomActivityIndicator.swift in Sources */,
 				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FA936D22A14093D0047CFE3 /* SimpleRow.swift in Sources */,
@@ -657,9 +682,12 @@
 				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
 				4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
+				4FA936DE2A14351E0047CFE3 /* HomeTransferLoading.swift in Sources */,
 				4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
+				4FA936E02A1438A10047CFE3 /* Images.swift in Sources */,
 				4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */,
+				4FA936DC2A1434960047CFE3 /* HomeTransferLoadingRow.swift in Sources */,
 				4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,

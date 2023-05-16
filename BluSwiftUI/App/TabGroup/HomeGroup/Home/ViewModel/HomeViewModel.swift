@@ -13,6 +13,7 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Properties
     @Published private(set) var transfers: HomeResponseModel = []
     @Published private(set) var isGetMoreItemsLoading: Bool = false
+    @Published private(set) var isTransferListLoading: Bool = false
     
     private var page: Int = 1
     
@@ -25,11 +26,13 @@ final class HomeViewModel: ObservableObject {
     }
     // MARK: - Methods
     // MARK: APIs
-    func getTransferList() async {
+    func getTransferList(showLoading: Bool = true) async {
+        isTransferListLoading = showLoading
         do {
             if let data = try await homeAPIProtocol.getTransferList(page: page) {
                 self.transfers.append(contentsOf: data)
                 isGetMoreItemsLoading = false
+                isTransferListLoading = false
             }
         } catch {
             print("development error - GET Transfer List: \(error)")
@@ -50,7 +53,7 @@ final class HomeViewModel: ObservableObject {
                 isGetMoreItemsLoading = true
                 page += 1
                 
-                await getTransferList()
+                await getTransferList(showLoading: false)
             }
         }
     }

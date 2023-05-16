@@ -29,29 +29,7 @@ struct Home: View {
                     VStack(alignment: .leading, spacing: 8) {
                         HeadingTitle(title: "All")
                             .padding(.leading)
-                        LazyVStack {
-                            ForEach(homeViewModel.transfers) { homeModel in
-                                NavigationLink(
-                                    destination: Details(
-                                        homeViewModel: homeViewModel,
-                                        homeModel: homeModel,
-                                        favorites: favorites
-                                    )
-                                ) {
-                                    HomeTransferRow(
-                                        homeModel: homeModel,
-                                        favoriteButtonSFSymbol: homeViewModel.getFavoriteButtonSFSymbol(favorites: favorites, homeModel: homeModel)
-                                    ) {
-                                        withAnimation(.spring()) {
-                                            homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)
-                                        }
-                                    }
-                                }
-                                .onAppear {
-                                    homeViewModel.getMoreItems(currentHomeModel: homeModel)
-                                }
-                            }
-                        }
+                        getTransferListSectionView()
                     }
                 }
             }
@@ -63,6 +41,37 @@ struct Home: View {
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    
+    @ViewBuilder
+    func getTransferListSectionView() -> some View {
+        if homeViewModel.isTransferListLoading {
+            HomeTransferLoading()
+        } else {
+            LazyVStack {
+                ForEach(homeViewModel.transfers) { homeModel in
+                    NavigationLink(
+                        destination: Details(
+                            homeViewModel: homeViewModel,
+                            homeModel: homeModel,
+                            favorites: favorites
+                        )
+                    ) {
+                        HomeTransferRow(
+                            homeModel: homeModel,
+                            favoriteButtonSFSymbol: homeViewModel.getFavoriteButtonSFSymbol(favorites: favorites, homeModel: homeModel)
+                        ) {
+                            withAnimation(.spring()) {
+                                homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                    }
+                }
+            }
         }
     }
 }
