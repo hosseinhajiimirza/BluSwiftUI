@@ -17,16 +17,28 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                // we can use lazyVStack here.
-                ForEach(homeViewModel.transfers) { homeModel in
-                    NavigationLink(destination: Color.blue) {
-                        HomeTransferRow(homeModel: homeModel)
+                PullToRefresh {
+                    homeViewModel.refreshTransferList()
+                }
+                VStack(alignment: .leading) {
+                    HeadingTitle(title: "All")
+                        .padding(.leading)
+                    LazyVStack {
+                        ForEach(homeViewModel.transfers) { homeModel in
+                            NavigationLink(destination: Color.blue) {
+                                HomeTransferRow(homeModel: homeModel)
+                            }
+                            .onAppear {
+                                homeViewModel.getMoreItems(currentHomeModel: homeModel)
+                            }
+                        }
                     }
                 }
             }
-            .onAppear {
+            .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
+            .onViewDidLoad {
                 Task {
-                    try? await homeViewModel.getTransferList(page: 1)
+                   await homeViewModel.getTransferList()
                 }
             }
             .navigationTitle("Home")

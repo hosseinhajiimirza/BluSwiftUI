@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */; };
+		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
+		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
+		4FA936A72A136EB20047CFE3 /* CashedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A62A136EB20047CFE3 /* CashedImage.swift */; };
+		4FA936AC2A1386A30047CFE3 /* HomeTransferRowAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */; };
+		4FA936AF2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936AD2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodeld */; };
+		4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936B62A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift */; };
+		4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936B72A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -33,9 +41,19 @@
 		4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58612A12B19D008682CA /* ViewDidLoad.swift */; };
 		4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58632A12B1C8008682CA /* ReadSize.swift */; };
 		4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58672A12B23E008682CA /* PullToRefresh.swift */; };
+		4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */; };
+		4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC586D2A12E396008682CA /* HeadingTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetriver.swift; sourceTree = "<group>"; };
+		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
+		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
+		4FA936A62A136EB20047CFE3 /* CashedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImage.swift; sourceTree = "<group>"; };
+		4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferRowAvatar.swift; sourceTree = "<group>"; };
+		4FA936AE2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BluSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		4FA936B62A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferCDModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		4FA936B72A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferCDModel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +81,8 @@
 		4FEC58612A12B19D008682CA /* ViewDidLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoad.swift; sourceTree = "<group>"; };
 		4FEC58632A12B1C8008682CA /* ReadSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSize.swift; sourceTree = "<group>"; };
 		4FEC58672A12B23E008682CA /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSpaceName.swift; sourceTree = "<group>"; };
+		4FEC586D2A12E396008682CA /* HeadingTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA9369D2A1365090047CFE3 /* Cashed */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936AA2A1385800047CFE3 /* Images */,
+			);
+			path = Cashed;
+			sourceTree = "<group>";
+		};
+		4FA9369E2A13653A0047CFE3 /* CashedImage */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936A92A1385690047CFE3 /* ViewModel */,
+				4FA936A52A136EA90047CFE3 /* View */,
+			);
+			path = CashedImage;
+			sourceTree = "<group>";
+		};
+		4FA936A52A136EA90047CFE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936A62A136EB20047CFE3 /* CashedImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FA936A92A1385690047CFE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FA936AA2A1385800047CFE3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */,
+				4FA936A12A1366C30047CFE3 /* ImageCashe.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4FA936B02A13A8700047CFE3 /* CoreStack */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936B52A13A8DF0047CFE3 /* TransferCDModel */,
+				4FA936AD2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodeld */,
+			);
+			path = CoreStack;
+			sourceTree = "<group>";
+		};
+		4FA936B52A13A8DF0047CFE3 /* TransferCDModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936B62A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift */,
+				4FA936B72A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift */,
+			);
+			path = TransferCDModel;
+			sourceTree = "<group>";
+		};
 		4FEC58052A127C70008682CA = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +192,7 @@
 		4FEC581F2A127F42008682CA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4FEC58692A12B400008682CA /* Models */,
 				4FEC585A2A12AEF7008682CA /* Helpers */,
 				4FEC58352A1282A9008682CA /* Starter */,
 				4FEC58202A127F49008682CA /* Base */,
@@ -204,6 +285,7 @@
 		4FEC583B2A1283D0008682CA /* Recourses */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936B02A13A8700047CFE3 /* CoreStack */,
 				4FEC58152A127C73008682CA /* Assets.xcassets */,
 			);
 			path = Recourses;
@@ -293,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC58572A129F23008682CA /* Cells */,
+				4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,6 +391,7 @@
 		4FEC585A2A12AEF7008682CA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4FA9369D2A1365090047CFE3 /* Cashed */,
 				4FEC58652A12B229008682CA /* Components */,
 				4FEC58602A12B192008682CA /* Modifiers */,
 				4FEC585B2A12AEFD008682CA /* Extensions */,
@@ -336,6 +420,8 @@
 		4FEC58652A12B229008682CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FA9369E2A13653A0047CFE3 /* CashedImage */,
+				4FEC586C2A12E38A008682CA /* HeadingTitle */,
 				4FEC58662A12B232008682CA /* PullToRefresh */,
 			);
 			path = Components;
@@ -347,6 +433,22 @@
 				4FEC58672A12B23E008682CA /* PullToRefresh.swift */,
 			);
 			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		4FEC58692A12B400008682CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC586A2A12B412008682CA /* CoordinateSpaceName.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FEC586C2A12E38A008682CA /* HeadingTitle */ = {
+			isa = PBXGroup;
+			children = (
+				4FEC586D2A12E396008682CA /* HeadingTitle.swift */,
+			);
+			path = HeadingTitle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,26 +523,36 @@
 			files = (
 				4FEC58512A129421008682CA /* HomeViewModel.swift in Sources */,
 				4FEC582E2A1280B9008682CA /* AsyncRestServiceProtocol.swift in Sources */,
+				4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */,
+				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
+				4FA936AC2A1386A30047CFE3 /* HomeTransferRowAvatar.swift in Sources */,
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
+				4FA936A72A136EB20047CFE3 /* CashedImage.swift in Sources */,
 				4FEC58542A12987C008682CA /* Home.swift in Sources */,
 				4FEC58262A128008008682CA /* Config.swift in Sources */,
 				4FEC58242A127FA7008682CA /* API.swift in Sources */,
 				4FEC585D2A12AF1F008682CA /* HashableExtension.swift in Sources */,
 				4FEC584F2A1293C2008682CA /* HomeAPIProtocol.swift in Sources */,
 				4FEC58432A128AC2008682CA /* CardModel.swift in Sources */,
+				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
 				4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */,
+				4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */,
 				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
+				4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FEC58452A128B9C008682CA /* MoreInfoModel.swift in Sources */,
+				4FA936B82A13A8F30047CFE3 /* TransferCDModel+CoreDataClass.swift in Sources */,
 				4FEC58472A128C3B008682CA /* PersonModel.swift in Sources */,
 				4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */,
+				4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */,
 				4FEC582A2A12802B008682CA /* EmptyModel.swift in Sources */,
 				4FEC585F2A12B115008682CA /* BundleExtension.swift in Sources */,
 				4FEC58312A1280E2008682CA /* NetworkViewModel.swift in Sources */,
+				4FA936AF2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodeld in Sources */,
 				4FEC58392A128325008682CA /* AppDelegate.swift in Sources */,
 				4FEC58372A1282BA008682CA /* Root.swift in Sources */,
 			);
@@ -649,6 +761,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FA936AD2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FA936AE2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodel */,
+			);
+			currentVersion = 4FA936AE2A13A62A0047CFE3 /* BluSwiftUI.xcdatamodel */;
+			path = BluSwiftUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4FEC58062A127C70008682CA /* Project object */;
 }

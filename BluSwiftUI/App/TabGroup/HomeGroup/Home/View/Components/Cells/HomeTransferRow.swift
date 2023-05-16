@@ -11,14 +11,13 @@ struct HomeTransferRow: View {
     let homeModel: HomeModel
     
     var body: some View {
-        HStack {
-            Circle()
-                .fill(Color.blue)
-            VStack(alignment: .leading) {
+        HStack(alignment: .center) {
+            HomeTransferRowAvatar(url: homeModel.person.avatar)
+                .frame(width: 64, height: 64)
+            VStack(alignment: .leading, spacing: 12) {
                 Text(homeModel.person.fullName.capitalized)
                     .font(.body)
                     .fontWeight(.medium)
-                Spacer(minLength: 0)
                 Text(homeModel.person.email)
                     .font(.callout)
                     .foregroundColor(.gray)
@@ -29,12 +28,13 @@ struct HomeTransferRow: View {
         }
         .padding(.vertical, 12)
         .padding(.horizontal)
-        .frame(height: 82)
+        .lineLimit(1)
     }
 }
 
 struct HomeTransferRow_Previews: PreviewProvider {
     static var previews: some View {
         HomeTransferRow(homeModel: .init())
+        Home()
     }
 }
