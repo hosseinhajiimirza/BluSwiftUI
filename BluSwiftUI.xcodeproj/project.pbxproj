@@ -26,6 +26,7 @@
 		4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */; };
 		4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */; };
 		4FA936D82A1416890047CFE3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D72A1416890047CFE3 /* DateExtension.swift */; };
+		4FA936DA2A14341A0047CFE3 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		4FA936D32A140DEA0047CFE3 /* TransferInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInfo.swift; sourceTree = "<group>"; };
 		4FA936D52A1412700047CFE3 /* DetailsPageAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageAvatar.swift; sourceTree = "<group>"; };
 		4FA936D72A1416890047CFE3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 			children = (
 				4FEC58612A12B19D008682CA /* ViewDidLoad.swift */,
 				4FEC58632A12B1C8008682CA /* ReadSize.swift */,
+				4FA936D92A14341A0047CFE3 /* ShimmerEffect.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */,
 				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
+				4FA936DA2A14341A0047CFE3 /* ShimmerEffect.swift in Sources */,
 				4FA936C62A13DC620047CFE3 /* HomeCoreDataProtocol.swift in Sources */,
 				4FA936CC2A13E69E0047CFE3 /* Details.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
