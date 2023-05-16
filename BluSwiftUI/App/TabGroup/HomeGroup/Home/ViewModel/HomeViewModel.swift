@@ -20,13 +20,13 @@ final class HomeViewModel: ObservableObject {
         self.homeAPIProtocol = homeAPIProtocol
     }
     
-    func getTransferList() async throws {
+    func getTransferList() async {
         do {
             if let data = try await homeAPIProtocol.getTransferList(page: page) {
                 self.transfers.append(contentsOf: data)
                 isGetMoreItemsLoading = false
             }
-        } catch let error as RequestError {
+        } catch {
             print("development error - GET Transfer List: \(error)")
         }
     }
@@ -35,7 +35,7 @@ final class HomeViewModel: ObservableObject {
         Task {
             page = 1
             
-            try? await getTransferList()
+            await getTransferList()
         }
     }
     
@@ -45,7 +45,7 @@ final class HomeViewModel: ObservableObject {
                 isGetMoreItemsLoading = true
                 page += 1
 
-                try? await getTransferList()
+                await getTransferList()
             }
         }
     }

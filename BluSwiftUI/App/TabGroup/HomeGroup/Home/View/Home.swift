@@ -38,7 +38,7 @@ struct Home: View {
             .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
             .onViewDidLoad {
                 Task {
-                    try? await homeViewModel.getTransferList()
+                   await homeViewModel.getTransferList()
                 }
             }
             .navigationTitle("Home")
