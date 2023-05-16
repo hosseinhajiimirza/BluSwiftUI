@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavoritesHead: View {
-    @FetchRequest(sortDescriptors: []) var favorites: FetchedResults<TransferCDModel>
+    let favorites: FetchedResults<TransferCDModel>
     
     var body: some View {
         ZStack {
@@ -34,7 +34,7 @@ struct FavoritesHead_Previews: PreviewProvider {
     static let persistance = CoreDataViewModel().container
     
     static var previews: some View {
-        FavoritesHead()
+        Home()
             .environment(\.managedObjectContext, persistance.viewContext)
     }
 }

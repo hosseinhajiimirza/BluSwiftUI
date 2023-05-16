@@ -32,7 +32,7 @@ struct HomeTransferFavoriteRow_Previews: PreviewProvider {
     static let persistance = CoreDataViewModel().container
     
     static var previews: some View {
-        FavoritesHead()
+        Home()
             .environment(\.managedObjectContext, persistance.viewContext)
     }
 }
