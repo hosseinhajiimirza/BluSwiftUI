@@ -36,7 +36,9 @@ struct Home: View {
                                         homeModel: homeModel,
                                         isFavorite: homeViewModel.checkIsInFavorites(favorites, homeModel: homeModel)
                                     ) {
-                                        homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)
+                                        withAnimation(.spring()) {
+                                            homeViewModel.favoriteButtonTapped(favorites: favorites, context: moc, homeModel: homeModel)
+                                        }
                                     }
                                 }
                                 .onAppear {
