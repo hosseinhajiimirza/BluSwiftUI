@@ -22,6 +22,7 @@
 		4FA936C82A13DCC40047CFE3 /* HomeCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936C72A13DCC40047CFE3 /* HomeCoreData.swift */; };
 		4FA936CC2A13E69E0047CFE3 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936CB2A13E69E0047CFE3 /* Details.swift */; };
 		4FA936CF2A13F1920047CFE3 /* BluCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936CE2A13F1920047CFE3 /* BluCard.swift */; };
+		4FA936D22A14093D0047CFE3 /* SimpleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936D12A14093D0047CFE3 /* SimpleRow.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		4FA936C72A13DCC40047CFE3 /* HomeCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoreData.swift; sourceTree = "<group>"; };
 		4FA936CB2A13E69E0047CFE3 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		4FA936CE2A13F1920047CFE3 /* BluCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluCard.swift; sourceTree = "<group>"; };
+		4FA936D12A14093D0047CFE3 /* SimpleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRow.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,6 +237,14 @@
 				4FA936CE2A13F1920047CFE3 /* BluCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4FA936D02A1409320047CFE3 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				4FA936D12A14093D0047CFE3 /* SimpleRow.swift */,
+			);
+			path = Rows;
 			sourceTree = "<group>";
 		};
 		4FEC58052A127C70008682CA = {
@@ -505,6 +515,7 @@
 		4FEC58652A12B229008682CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FA936D02A1409320047CFE3 /* Rows */,
 				4FA9369E2A13653A0047CFE3 /* CashedImage */,
 				4FEC586C2A12E38A008682CA /* HeadingTitle */,
 				4FEC58662A12B232008682CA /* PullToRefresh */,
@@ -628,6 +639,7 @@
 				4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */,
 				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,
+				4FA936D22A14093D0047CFE3 /* SimpleRow.swift in Sources */,
 				4FEC584D2A1292D8008682CA /* HomeAPI.swift in Sources */,
 				4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */,
 				4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */,
