@@ -11,6 +11,7 @@
 		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
 		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
 		4FA936A72A136EB20047CFE3 /* CashedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A62A136EB20047CFE3 /* CashedImage.swift */; };
+		4FA936AC2A1386A30047CFE3 /* HomeTransferRowAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */; };
 		4FEC58122A127C70008682CA /* BluSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */; };
 		4FEC58162A127C73008682CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58152A127C73008682CA /* Assets.xcassets */; };
 		4FEC58192A127C73008682CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC58182A127C73008682CA /* Preview Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
 		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
 		4FA936A62A136EB20047CFE3 /* CashedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImage.swift; sourceTree = "<group>"; };
+		4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferRowAvatar.swift; sourceTree = "<group>"; };
 		4FEC580E2A127C70008682CA /* BluSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEC58112A127C70008682CA /* BluSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluSwiftUIApp.swift; sourceTree = "<group>"; };
 		4FEC58152A127C73008682CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC58572A129F23008682CA /* Cells */,
+				4FA936AB2A1386A30047CFE3 /* HomeTransferRowAvatar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */,
 				4FEC58282A12801B008682CA /* Errors.swift in Sources */,
 				4FEC58642A12B1C8008682CA /* ReadSize.swift in Sources */,
+				4FA936AC2A1386A30047CFE3 /* HomeTransferRowAvatar.swift in Sources */,
 				4FEC58412A128A19008682CA /* HomeModel.swift in Sources */,
 				4FA936A72A136EB20047CFE3 /* CashedImage.swift in Sources */,
 				4FEC58542A12987C008682CA /* Home.swift in Sources */,
