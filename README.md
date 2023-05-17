@@ -25,10 +25,9 @@ Features:
   2. Custom Activity Indicator
   3. Custom Animations and network loaders
   4. Shimmer Effect
-  5. Custom transition in users page
-  6. Pull to refresh with "Blu" logo
-  7. Custom Bank Card View with the design of Blu Bank Cards
-  8. Pagination
-  9. Core Data
-  10. Custom Components,and View modifiers
-  11. Unit testing for Home page.
+  5. Pull to refresh with "Blu" logo
+  6. Custom Bank Card View with the design of Blu Bank Cards
+  7. Pagination
+  8. Core Data
+  9. Custom Components,and View modifiers
+  10. Unit testing for Home page.
