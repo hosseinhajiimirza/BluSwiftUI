@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Home: View {
     @StateObject private var homeViewModel: HomeViewModel
-    
     @FetchRequest(sortDescriptors: []) var favorites: FetchedResults<TransferCDModel>
     
     @Environment(\.managedObjectContext) var moc
@@ -36,7 +35,7 @@ struct Home: View {
             .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
             .onViewDidLoad {
                 Task {
-                   await homeViewModel.getTransferList()
+                    await homeViewModel.getTransferList()
                 }
             }
             .onReceive(
