@@ -12,6 +12,7 @@
 		4F412F222A14591E00228F9A /* MockNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F212A14591E00228F9A /* MockNetworkViewModel.swift */; };
 		4F412F262A1459CF00228F9A /* HomeTransferResponseJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F412F252A1459CF00228F9A /* HomeTransferResponseJson.json */; };
 		4F412F282A145A3700228F9A /* JsonFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F272A145A3700228F9A /* JsonFiles.swift */; };
+		4F412F2B2A145A9600228F9A /* HomeMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F2A2A145A9600228F9A /* HomeMockAPI.swift */; };
 		4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */; };
 		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
 		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
@@ -83,6 +84,7 @@
 		4F412F212A14591E00228F9A /* MockNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkViewModel.swift; sourceTree = "<group>"; };
 		4F412F252A1459CF00228F9A /* HomeTransferResponseJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeTransferResponseJson.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		4F412F272A145A3700228F9A /* JsonFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFiles.swift; sourceTree = "<group>"; };
+		4F412F2A2A145A9600228F9A /* HomeMockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMockAPI.swift; sourceTree = "<group>"; };
 		4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetriver.swift; sourceTree = "<group>"; };
 		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
 		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
@@ -218,6 +220,14 @@
 				4F412F252A1459CF00228F9A /* HomeTransferResponseJson.json */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4F412F292A145A8800228F9A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F2A2A145A9600228F9A /* HomeMockAPI.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		4FA9369D2A1365090047CFE3 /* Cashed */ = {
@@ -564,6 +574,7 @@
 		4FEC584A2A129280008682CA /* APIConfig */ = {
 			isa = PBXGroup;
 			children = (
+				4F412F292A145A8800228F9A /* Mock */,
 				4FEC584B2A1292CD008682CA /* Real */,
 				4FEC584E2A1293C2008682CA /* HomeAPIProtocol.swift */,
 			);
@@ -819,6 +830,7 @@
 				4FEC58682A12B23E008682CA /* PullToRefresh.swift in Sources */,
 				4FEC586B2A12B412008682CA /* CoordinateSpaceName.swift in Sources */,
 				4FEC58622A12B19D008682CA /* ViewDidLoad.swift in Sources */,
+				4F412F2B2A145A9600228F9A /* HomeMockAPI.swift in Sources */,
 				4FA936B92A13A8F30047CFE3 /* TransferCDModel+CoreDataProperties.swift in Sources */,
 				4FEC58592A129F39008682CA /* HomeTransferRow.swift in Sources */,
 				4FA936DE2A14351E0047CFE3 /* HomeTransferLoading.swift in Sources */,
