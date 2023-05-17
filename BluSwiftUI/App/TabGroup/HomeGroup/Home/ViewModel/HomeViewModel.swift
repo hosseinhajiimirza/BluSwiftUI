@@ -37,7 +37,11 @@ final class HomeViewModel: ObservableObject {
         
         do {
             if let data = try await homeAPIProtocol.getTransferList(page: page) {
-                self.transfers.append(contentsOf: data)
+                data.forEach { homeModel in
+                    if !transfers.contains(where: {$0.person.fullName == homeModel.person.fullName}) {
+                        transfers.append(homeModel)
+                    }
+                }
                 isGetMoreItemsLoading = false
                 isTransferListLoading = false
             }
