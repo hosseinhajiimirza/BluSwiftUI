@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F412F0D2A144C8D00228F9A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F0C2A144C8D00228F9A /* Reachability.swift */; };
+		4F412F1F2A14585700228F9A /* HomeUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F1E2A14585700228F9A /* HomeUnitTest.swift */; };
 		4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */; };
 		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
 		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
@@ -62,8 +63,20 @@
 		4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC586D2A12E396008682CA /* HeadingTitle.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4F412F162A14582000228F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FEC58062A127C70008682CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FEC580D2A127C70008682CA;
+			remoteInfo = BluSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4F412F0C2A144C8D00228F9A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4F412F122A14581F00228F9A /* BluSwiftUI_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluSwiftUI_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F412F1E2A14585700228F9A /* HomeUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUnitTest.swift; sourceTree = "<group>"; };
 		4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetriver.swift; sourceTree = "<group>"; };
 		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
 		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
@@ -120,6 +133,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F412F0F2A14581F00228F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEC580B2A127C70008682CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +156,38 @@
 				4F412F0C2A144C8D00228F9A /* Reachability.swift */,
 			);
 			path = NetworkConncetion;
+			sourceTree = "<group>";
+		};
+		4F412F132A14581F00228F9A /* BluSwiftUI_UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F1B2A14583000228F9A /* TabGroup */,
+			);
+			path = BluSwiftUI_UnitTests;
+			sourceTree = "<group>";
+		};
+		4F412F1B2A14583000228F9A /* TabGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F1C2A14583700228F9A /* HomeGroup */,
+			);
+			path = TabGroup;
+			sourceTree = "<group>";
+		};
+		4F412F1C2A14583700228F9A /* HomeGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F1D2A14583D00228F9A /* Home */,
+			);
+			path = HomeGroup;
+			sourceTree = "<group>";
+		};
+		4F412F1D2A14583D00228F9A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F1E2A14585700228F9A /* HomeUnitTest.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4FA9369D2A1365090047CFE3 /* Cashed */ = {
@@ -288,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC58102A127C70008682CA /* BluSwiftUI */,
+				4F412F132A14581F00228F9A /* BluSwiftUI_UnitTests */,
 				4FEC580F2A127C70008682CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -296,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEC580E2A127C70008682CA /* BluSwiftUI.app */,
+				4F412F122A14581F00228F9A /* BluSwiftUI_UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -593,6 +647,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4F412F112A14581F00228F9A /* BluSwiftUI_UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F412F1A2A14582000228F9A /* Build configuration list for PBXNativeTarget "BluSwiftUI_UnitTests" */;
+			buildPhases = (
+				4F412F0E2A14581F00228F9A /* Sources */,
+				4F412F0F2A14581F00228F9A /* Frameworks */,
+				4F412F102A14581F00228F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F412F172A14582000228F9A /* PBXTargetDependency */,
+			);
+			name = BluSwiftUI_UnitTests;
+			productName = BluSwiftUI_UnitTests;
+			productReference = 4F412F122A14581F00228F9A /* BluSwiftUI_UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4FEC580D2A127C70008682CA /* BluSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FEC581C2A127C73008682CA /* Build configuration list for PBXNativeTarget "BluSwiftUI" */;
@@ -620,6 +692,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4F412F112A14581F00228F9A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4FEC580D2A127C70008682CA;
+					};
 					4FEC580D2A127C70008682CA = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -639,11 +715,19 @@
 			projectRoot = "";
 			targets = (
 				4FEC580D2A127C70008682CA /* BluSwiftUI */,
+				4F412F112A14581F00228F9A /* BluSwiftUI_UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F412F102A14581F00228F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEC580C2A127C70008682CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -656,6 +740,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F412F0E2A14581F00228F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F412F1F2A14585700228F9A /* HomeUnitTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEC580A2A127C70008682CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -716,7 +808,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4F412F172A14582000228F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FEC580D2A127C70008682CA /* BluSwiftUI */;
+			targetProxy = 4F412F162A14582000228F9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4F412F182A14582000228F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR5E89RNHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.BluSwiftUI-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluSwiftUI";
+			};
+			name = Debug;
+		};
+		4F412F192A14582000228F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GR5E89RNHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.BluSwiftUI-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluSwiftUI";
+			};
+			name = Release;
+		};
 		4FEC581A2A127C73008682CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -898,6 +1036,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F412F1A2A14582000228F9A /* Build configuration list for PBXNativeTarget "BluSwiftUI_UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F412F182A14582000228F9A /* Debug */,
+				4F412F192A14582000228F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4FEC58092A127C70008682CA /* Build configuration list for PBXProject "BluSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
