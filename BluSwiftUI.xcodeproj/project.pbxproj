@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F412F0D2A144C8D00228F9A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F412F0C2A144C8D00228F9A /* Reachability.swift */; };
 		4FA936A02A1365460047CFE3 /* ImageRetriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */; };
 		4FA936A22A1366C30047CFE3 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A12A1366C30047CFE3 /* ImageCashe.swift */; };
 		4FA936A42A136E640047CFE3 /* CashedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F412F0C2A144C8D00228F9A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4FA9369F2A1365460047CFE3 /* ImageRetriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetriver.swift; sourceTree = "<group>"; };
 		4FA936A12A1366C30047CFE3 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
 		4FA936A32A136E640047CFE3 /* CashedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedImageViewModel.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F412F0B2A144C6A00228F9A /* NetworkConncetion */ = {
+			isa = PBXGroup;
+			children = (
+				4F412F0C2A144C8D00228F9A /* Reachability.swift */,
+			);
+			path = NetworkConncetion;
+			sourceTree = "<group>";
+		};
 		4FA9369D2A1365090047CFE3 /* Cashed */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +524,7 @@
 		4FEC585A2A12AEF7008682CA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4F412F0B2A144C6A00228F9A /* NetworkConncetion */,
 				4FA9369D2A1365090047CFE3 /* Cashed */,
 				4FEC58652A12B229008682CA /* Components */,
 				4FEC58602A12B192008682CA /* Modifiers */,
@@ -672,6 +683,7 @@
 				4FA936D42A140DEA0047CFE3 /* TransferInfo.swift in Sources */,
 				4FA936D62A1412700047CFE3 /* DetailsPageAvatar.swift in Sources */,
 				4FA936C32A13B2BB0047CFE3 /* HomeTransferFavoriteRow.swift in Sources */,
+				4F412F0D2A144C8D00228F9A /* Reachability.swift in Sources */,
 				4FA936E32A1439180047CFE3 /* CustomActivityIndicator.swift in Sources */,
 				4FEC586E2A12E396008682CA /* HeadingTitle.swift in Sources */,
 				4FEC58342A12813B008682CA /* Network.swift in Sources */,

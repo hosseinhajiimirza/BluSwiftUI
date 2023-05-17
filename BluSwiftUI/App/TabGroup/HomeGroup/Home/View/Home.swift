@@ -39,6 +39,23 @@ struct Home: View {
                    await homeViewModel.getTransferList()
                 }
             }
+            .onReceive(
+                NotificationCenter
+                    .default
+                    .publisher(
+                        for: .reachabilityStatusChangedNotification
+                    )
+            ) { (output) in
+                if let status = output.userInfo?["Status"] as? ReachabilityStatus {
+                    if case .online = status {
+                        Task {
+                            if homeViewModel.transfers.isEmpty {
+                                await homeViewModel.getTransferList()
+                            }
+                        }
+                    }
+                }
+            }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
         }

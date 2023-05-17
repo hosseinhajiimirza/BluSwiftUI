@@ -10,6 +10,8 @@ import SwiftUI
 struct TransferInfo: View {
     let homeModel: HomeModel
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack {
             SimpleRow(leadingText: "Last transfer", trailingText: homeModel.lastTransfer.toISODate.toCustomFormatSTR)
@@ -30,7 +32,9 @@ struct TransferInfo: View {
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.2))
+        .background(
+            Color.gray.opacity(colorScheme == .light ? 0.1 : 0.2)
+        )
         .cornerRadius(12)
     }
 }
@@ -38,5 +42,6 @@ struct TransferInfo: View {
 struct TransferInfo_Previews: PreviewProvider {
     static var previews: some View {
         TransferInfo(homeModel: .init())
+            .preferredColorScheme(.dark)
     }
 }

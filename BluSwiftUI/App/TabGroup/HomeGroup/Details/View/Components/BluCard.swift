@@ -11,12 +11,16 @@ struct BluCard: View {
     let homeModel: HomeModel
     @State private var contentSize = CGSize.zero
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)) {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(
-                    LinearGradient(colors: [.yellow, .gray], startPoint: .topLeading, endPoint: .bottomTrailing)
-                )
+            ZStack {
+                Color.white
+                LinearGradient(colors: [.blue.opacity(0.5), .blue.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            }
+            .cornerRadius(12)
+            .shadow(color:  colorScheme == .light ? .clear : .white.opacity(0.5), radius: 2)
             HStack(alignment: .center) {
                 HStack(alignment: .top, spacing: 8) {
                     Text("blubank.com")
@@ -30,6 +34,7 @@ struct BluCard: View {
                         .padding(.leading, 8)
                         .padding(.top, 12)
                     Rectangle()
+                        .fill(Color.black)
                         .frame(width: 44)
                 }
                 VStack(alignment: .leading) {
@@ -52,6 +57,7 @@ struct BluCard: View {
                 .padding(.vertical)
             }
         }
+        .foregroundColor(.black)
         .frame(width: 220, height: 300)
     }
 
@@ -60,5 +66,6 @@ struct BluCard: View {
 struct BluCard_Previews: PreviewProvider {
     static var previews: some View {
         BluCard(homeModel: .init())
+            .preferredColorScheme(.dark)
     }
 }

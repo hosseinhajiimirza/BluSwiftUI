@@ -21,6 +21,9 @@ struct Network<Content>: View where Content: View {
         ZStack {
             content
                 .environmentObject(networkViewModel)
+                .onAppear {
+                    Reachability.shared.monitorReachabilityChanges()
+                }
         }
     }
 }

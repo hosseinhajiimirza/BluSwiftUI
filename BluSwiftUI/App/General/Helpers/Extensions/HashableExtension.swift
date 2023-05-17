@@ -58,6 +58,10 @@ extension String {
         
         return formatter.date(from: self) ?? Date()
     }
+    
+    func localized(_ comment: String = "", bundle: Bundle = .main) -> String {
+        NSLocalizedString(self, bundle: .main, comment: comment)
+    }
 }
 // MARK: - Int
 extension Int {

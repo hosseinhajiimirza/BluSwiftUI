@@ -12,6 +12,8 @@ struct HomeTransferRow: View {
     let favoriteButtonSFSymbol: String
     var action: (() -> Void)?
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         HStack(alignment: .center) {
             HomeTransferRowAvatar(url: homeModel.person.avatar)
@@ -37,6 +39,9 @@ struct HomeTransferRow: View {
                     .foregroundColor(.gray)
             }
         }
+        .foregroundColor(
+            colorScheme == .light ? .black : .white
+        )
         .padding(.vertical, 12)
         .padding(.horizontal)
         .lineLimit(1)
