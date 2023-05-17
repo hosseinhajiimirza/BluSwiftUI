@@ -20,11 +20,12 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack {
                     PullToRefresh {
                         homeViewModel.refreshTransferList()
                     }
                     FavoritesHead(favorites: favorites)
+                    Spacer(minLength: 16)
                     VStack(alignment: .leading, spacing: 8) {
                         HeadingTitle(title: "All")
                             .padding(.leading)
