@@ -36,6 +36,8 @@ public enum ReachabilityStatus: CustomStringConvertible {
 }
 
 public class Reachability {
+    static let shared = Reachability()
+    
     func connectionStatus() -> ReachabilityStatus {
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
