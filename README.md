@@ -1,6 +1,7 @@
 # BluSwiftUI
 
 The Home page loads list of transfer destinations and shows them in two sections:
+
 A)Favorites: Selected items by user as Favorite.
 
 B)All: Loaded items.
