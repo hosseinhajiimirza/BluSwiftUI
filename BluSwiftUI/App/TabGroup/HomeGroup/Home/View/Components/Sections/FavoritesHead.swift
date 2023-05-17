@@ -17,7 +17,7 @@ struct FavoritesHead: View {
                     HeadingTitle(title: "Favorites")
                         .padding(.horizontal)
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
+                        LazyHStack {
                             ForEach(favorites) { favorite in
                                 HomeTransferFavoriteRow(favoriteModel: favorite)
                             }

@@ -13,7 +13,7 @@ struct Details: View {
     let favorites: FetchedResults<TransferCDModel>
     
     @Environment(\.managedObjectContext) var moc
-
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .leading, vertical: .top)) {
             ScrollView(.vertical, showsIndicators: false) {

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Home: View {
     @StateObject private var homeViewModel: HomeViewModel
-    
     @FetchRequest(sortDescriptors: []) var favorites: FetchedResults<TransferCDModel>
     
     @Environment(\.managedObjectContext) var moc
@@ -21,11 +20,12 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack {
                     PullToRefresh {
                         homeViewModel.refreshTransferList()
                     }
                     FavoritesHead(favorites: favorites)
+                    Spacer(minLength: 16)
                     VStack(alignment: .leading, spacing: 8) {
                         HeadingTitle(title: "All")
                             .padding(.leading)
@@ -36,7 +36,7 @@ struct Home: View {
             .coordinateSpace(name: CoordinateSpaceName.pullToRefresh.rawValue)
             .onViewDidLoad {
                 Task {
-                   await homeViewModel.getTransferList()
+                    await homeViewModel.getTransferList()
                 }
             }
             .onReceive(
@@ -49,7 +49,7 @@ struct Home: View {
                 if let status = output.userInfo?["Status"] as? ReachabilityStatus {
                     if case .online = status {
                         Task {
-                            if homeViewModel.transfers.isEmpty {
+                            if homeViewModel.transfers.isEmpty && homeViewModel.hasConectionLost {
                                 await homeViewModel.getTransferList()
                             }
                         }

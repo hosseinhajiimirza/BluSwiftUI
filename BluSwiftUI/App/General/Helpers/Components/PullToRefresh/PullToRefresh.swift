@@ -15,44 +15,46 @@ struct PullToRefresh: View {
     
     var body: some View {
         GeometryReader { geo in
-            if (geo.frame(in: .named(coordinateSpaceName)).minY >= 20) {
-                // When we pull to refresh
-                Spacer()
-                    .onAppear {
-                        needRefresh = true
-                    }
-            } else if (geo.frame(in: .named(coordinateSpaceName)).maxY < 0) {
-                // refresh action after hiding the indicator
-                Spacer()
-                    .onAppear {
-                        if needRefresh {
-                            Task {
-                                withAnimation(.easeIn(duration: 0.1)) {
-                                    // you can set a delay for it.
-                                    needRefresh = false
-                                }
+            let frame = geo.frame(in: .named(coordinateSpaceName))
+            ZStack {
+                if (frame.minY >= 22) {
+                    // When we pull to refresh
+                    Spacer()
+                        .onAppear {
+                            needRefresh = true
+                        }
+                } else if (frame.maxY < 0) {
+                    // refresh action after hiding the indicator
+                    Spacer()
+                        .onAppear {
+                            if needRefresh {
                                 Task {
-                                    // To make it smooth, we set a 0.5 delay:
-                                    try? await Task.sleep(nanoseconds: (0.5).toNanoSecends)
-                                    onRefresh()
+                                    withAnimation(.easeIn(duration: 0.1)) {
+                                        // you can set a delay for it.
+                                        needRefresh = false
+                                    }
+                                    Task {
+                                        // To make it smooth, we set a 0.5 delay:
+                                        try? await Task.sleep(nanoseconds: (0.5).toNanoSecends)
+                                        onRefresh()
+                                    }
                                 }
                             }
                         }
+                }
+                if needRefresh {
+                    VStack {
+                        HStack {
+                            Spacer()
+                            CustomActivityIndicator()
+                            Spacer()
+                        }
                     }
-            }
-            VStack {
-                HStack {
-                    Spacer()
-                    if needRefresh {
-                        CustomActivityIndicator()
-                    }
-                    Spacer()
                 }
             }
         }
-        .padding(.top, -54)
+        .padding(.top, -64)
     }
-
 }
 
 struct PullToRefresh_Previews: PreviewProvider {

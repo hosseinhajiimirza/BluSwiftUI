@@ -55,14 +55,3 @@ extension CashedImage {
         case invalidData
     }
 }
-
-enum CashedImagePhase {
-    /// No image is loaded.
-    case empty
-
-    /// An image succesfully loaded.
-    case success(Image)
-
-    /// An image failed to load with an error.
-    case failure(Error)
-}

@@ -14,6 +14,7 @@ final class HomeViewModel: ObservableObject {
     @Published private(set) var transfers: HomeResponseModel = []
     @Published private(set) var isGetMoreItemsLoading: Bool = false
     @Published private(set) var isTransferListLoading: Bool = false
+    @Published private(set) var hasConectionLost: Bool = false
     
     private var page: Int = 1
     
@@ -28,9 +29,19 @@ final class HomeViewModel: ObservableObject {
     // MARK: APIs
     func getTransferList(showLoading: Bool = true) async {
         isTransferListLoading = showLoading
+        
+        if case .offline = Reachability.shared.connectionStatus() {
+            hasConectionLost = true
+            return
+        }
+        
         do {
             if let data = try await homeAPIProtocol.getTransferList(page: page) {
-                self.transfers.append(contentsOf: data)
+                data.forEach { homeModel in
+                    if !transfers.contains(where: {$0.person.fullName == homeModel.person.fullName}) {
+                        transfers.append(homeModel)
+                    }
+                }
                 isGetMoreItemsLoading = false
                 isTransferListLoading = false
             }
